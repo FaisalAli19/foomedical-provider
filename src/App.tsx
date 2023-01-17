@@ -1,7 +1,11 @@
-import { AppShell } from '@mantine/core';
+import { AppShell, MantineTheme } from '@mantine/core';
+// @ts-ignore  
 import { ErrorBoundary, useMedplum } from '@medplum/react';
 import React, { Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import { HeaderBar } from './components/HeaderBar';
 import { Loading } from './components/Loading';
 import { CarePlansList } from './pages/CarePlansList';
@@ -14,9 +18,11 @@ import { PatientsList } from './pages/PatientsList';
 import { PlanDefinitionPage } from './pages/PlanDefinitionPage';
 import { ProfilePage } from './pages/ProfilePage';
 import { QuestionnairePage } from './pages/QuestionnairePage';
+import { Register } from './pages/Register';
 import { ReportsPage } from './pages/ReportsPage';
 import { ResourcePage } from './pages/ResourcePage';
 import { ResourceSearchPage } from './pages/ResourceSearchPage';
+import { ResetPassword } from './pages/ResetPassword';
 import { SchedulePage } from './pages/SchedulePage';
 import { SignInPage } from './pages/SignInPage';
 import { TaskPage } from './pages/TaskPage';
@@ -36,7 +42,9 @@ export function App(): JSX.Element | null {
         <Suspense fallback={<Loading />}>
           <Routes>
             <Route path="/" element={profile ? <HomePage /> : <LandingPage />} />
+            <Route path="/register" element={<Register />} />
             <Route path="/signin" element={<SignInPage />} />
+            <Route path="/reset-password" element={<ResetPassword />} />
             <Route path="/profile" element={<ProfilePage />} />
             <Route path="/patients" element={<PatientsList />} />
             <Route path="/reports" element={<ReportsPage />} />
@@ -58,6 +66,18 @@ export function App(): JSX.Element | null {
           </Routes>
         </Suspense>
       </ErrorBoundary>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={true}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        pauseOnHover
+        draggable={false}
+        theme="light"
+      />
     </AppShell>
   );
 }

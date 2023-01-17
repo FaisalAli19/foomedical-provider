@@ -1,11 +1,14 @@
 import { MantineProvider, MantineThemeOverride } from '@mantine/core';
 import { NotificationsProvider } from '@mantine/notifications';
 import { MedplumClient } from '@medplum/core';
+// @ts-ignore  
 import { MedplumProvider } from '@medplum/react';
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import { App } from './App';
+
+import './index.css';
 
 const medplum = new MedplumClient({
   onUnauthenticated: () => (window.location.href = '/'),
@@ -13,7 +16,13 @@ const medplum = new MedplumClient({
 });
 
 const theme: MantineThemeOverride = {
-  primaryColor: 'teal',
+  colors: {
+    brand: ['#FFEEEC'],
+    primary: ['#223E9A'],
+    border: ['#798BC9']
+  },
+  fontFamily: 'Pangram, sans-serif',
+  primaryColor: 'brand',
   primaryShade: 9,
 };
 
@@ -22,6 +31,7 @@ const root = createRoot(container);
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+      {/* @ts-ignore */}
       <MedplumProvider medplum={medplum}>
         <MantineProvider theme={theme} withGlobalStyles withNormalizeCSS>
           <NotificationsProvider position="bottom-right">
