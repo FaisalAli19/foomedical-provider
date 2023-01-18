@@ -10,6 +10,7 @@ import { HeaderBar } from './components/HeaderBar';
 import { Loading } from './components/Loading';
 import { CarePlansList } from './pages/CarePlansList';
 import { CreateResourcePage } from './pages/CreateResourcePage';
+import { ChangePassword } from './pages/ChangePassword';
 import { FormsList } from './pages/FormsList';
 import { HomePage } from './pages/HomePage';
 import { LandingPage } from './pages/LandingPage';
@@ -44,6 +45,7 @@ export function App(): JSX.Element | null {
             <Route path="/" element={profile ? <HomePage /> : <LandingPage />} />
             <Route path="/register" element={<Register />} />
             <Route path="/signin" element={<SignInPage />} />
+            <Route path="/change-password" element={<ChangePassword />} />
             <Route path="/reset-password" element={<ResetPassword />} />
             <Route path="/profile" element={<ProfilePage />} />
             <Route path="/patients" element={<PatientsList />} />

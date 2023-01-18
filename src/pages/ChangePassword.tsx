@@ -1,6 +1,6 @@
 import { Text, Box, Flex, CSSObject, MantineTheme, Image, useMantineTheme } from '@mantine/core';
-// @ts-ignore  
-import { SignInForm } from '@medplum/react';
+// @ts-ignore
+import { ChangePasswordForm } from '@medplum/react';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { OperationOutcomeIssue } from '@medplum/fhirtypes';
@@ -8,10 +8,10 @@ import { toast } from 'react-toastify';
 
 import { SuccessComponent } from '../components/SuccessComponent';
 
-export function SignInPage(): JSX.Element {
+export function ChangePassword(): JSX.Element {
   const navigate = useNavigate();
   const theme = useMantineTheme();
-  
+
   const handleErrors = (errors: OperationOutcomeIssue[] | undefined) => {
     if (errors) {
       errors.forEach((error) => toast.error(error?.details?.text));
@@ -24,18 +24,15 @@ export function SignInPage(): JSX.Element {
         <Image src="/images/top-left.png" alt="design pallets" />
       </Box>
       <Flex sx={flexContainerStyle} justify="center" align="center" className="sign-in-container">
-        <SignInForm
+        <ChangePasswordForm
           projectId={import.meta.env.VITE_MEDPLUM_PROJECT_ID}
-          googleClientId={import.meta.env.VITE_MEDPLUM_GOOGLE_CLIENT_ID}
           onSuccess={() => navigate('/')}
           styles={formContainerStyle()}
           formStyles={formStyle(theme)}
-          dividerColor={theme.colors.border[0]}
           linkColor={theme.colors.border[0]}
-          onForgotPassword={() => navigate('/reset-password')}
           onRegister={() => navigate('/register')}
           onError={handleErrors}
-          renderSuccess={() => <SuccessComponent text="Success" />}
+          renderSuccess={() => <SuccessComponent text="Done" />}
           visibilityToggleIcon={({ reveal }: { reveal: boolean }) =>
             reveal ? <Image src="/images/hide.svg" alt="closed eye" /> : <Image src="/images/show.svg" alt="open eye" />
           }
@@ -44,9 +41,9 @@ export function SignInPage(): JSX.Element {
             <Image src="/images/logo.png" alt="logo" />
           </Box>
           <Text size="lg" sx={heading} mb="37px">
-            Sign in to Marti Health
+            Create New Password
           </Text>
-        </SignInForm>
+        </ChangePasswordForm>
       </Flex>
       <Box sx={bottomRightImageStyle}>
         <Image src="/images/bottom-right.png" alt="design pallets" />
@@ -58,12 +55,12 @@ export function SignInPage(): JSX.Element {
 const formContainerStyle = () => ({
   width: '100%',
   border: 'none',
-  boxShadow: 'none'
+  boxShadow: 'none',
 });
 
 const formStyle = (theme: MantineTheme) => ({
   background: theme.colors.brand[0],
-  padding: '0 28px 28px',
+  padding: '28px',
   borderRadius: '28px',
 });
 
@@ -79,8 +76,8 @@ const containerStyle = () => ({
 const flexContainerStyle = () => ({
   height: '100%',
   width: '100%',
-  'margin': '0 auto',
-})
+  margin: '0 auto',
+});
 
 const commonImageStyle = (): CSSObject => ({
   position: 'absolute',
