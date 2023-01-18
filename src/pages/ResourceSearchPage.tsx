@@ -10,7 +10,7 @@ import {
   SortRule,
 } from '@medplum/core';
 import { ResourceType, UserConfiguration } from '@medplum/fhirtypes';
-import { MemoizedSearchControl, useMedplum } from '@medplum/react';
+import { MemoizedSearchControl, useMedplum } from 'marti-react-components';
 import React, { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 

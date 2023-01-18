@@ -1,6 +1,6 @@
 import { getDisplayString } from '@medplum/core';
 import { Practitioner } from '@medplum/fhirtypes';
-import { ResourceTable, useMedplumProfile } from '@medplum/react';
+import { ResourceTable, useMedplumProfile } from 'marti-react-components';
 import React from 'react';
 
 export function ProfilePage(): JSX.Element {

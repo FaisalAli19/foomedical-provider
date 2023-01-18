@@ -484,10 +484,10 @@
   resolved "https://registry.npmjs.org/@mantine/utils/-/utils-5.7.1.tgz"
   integrity sha512-YHn6BDI2kkmLY6Zdv8MnFaolKbD+sJyCBG1GY0yO6aHiz8/vTxiaTJv7mhro7Pc1XzclDzVJvd9kAd6lzumAyg==
 
-"@medplum/core@1.0.5":
-  version "1.0.5"
-  resolved "https://registry.npmjs.org/@medplum/core/-/core-1.0.5.tgz"
-  integrity sha512-XMs2rJgW8LD5snh2SC+U5Ikqd4bBjlEpnzxu9NZGEL/67zCPhU80URYAaT3CdTfVvAOu7BbYESljzjfyrEZ1pA==
+"@medplum/core@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@medplum/core/-/core-1.0.6.tgz#2f26dbe96caebb930f4e9b8f41b5378addd0e53a"
+  integrity sha512-fY+9aIUUoxCz+caiIW/lzAWuD8afmNkRJn2zZc303mJ5I0o68EfTRbtXm0jCsbSopX30iPYS1MilgIwccUn1YQ==
 
 "@medplum/fhirtypes@1.0.5":
   version "1.0.5"
@@ -495,7 +495,7 @@
   integrity sha512-slnDz1/U4f+shKhNFO/ZQHoBScGK5dvTLXjyKGxQjG2P7j1seFooXVbGHWKoAqAZGyIcXqnme90z+FN1M9NkAA==
 
 "@medplum/react@file:../react":
-  version "1.0.6"
+  version "1.0.7"
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -1720,6 +1720,11 @@ magic-string@^0.26.7:
   integrity sha512-hX9XH3ziStPoPhJxLq1syWuZMxbDvGNbVchfrdCtanC7D13888bMFow61x8axrx+GfHLtVeAx2kxL7tTGRl+Ow==
   dependencies:
     sourcemap-codec "^1.4.8"
+
+marti-react-components@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/marti-react-components/-/marti-react-components-1.0.7.tgz#a19447a01e32591c3708df1d6c6ea8d0c0bd70f9"
+  integrity sha512-81OrKOsxZWzUh6Hut88Rivfx9AV/pBa+JT7Lv15Zb90qtbU7hA4rJQV3sz7ENi/JxEVwqwMki9LleAAOO7lvlw==
 
 merge2@^1.3.0, merge2@^1.4.1:
   version "1.4.1"

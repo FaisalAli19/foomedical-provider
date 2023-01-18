@@ -20,7 +20,7 @@ import {
   ResourceTable,
   StatusBadge,
   useMedplum,
-} from '@medplum/react';
+} from 'marti-react-components';
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { Loading } from '../components/Loading';

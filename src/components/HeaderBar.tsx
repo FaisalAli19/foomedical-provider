@@ -4,7 +4,7 @@ import { Burger, Container, createStyles, Group, Menu, Tabs, Text, UnstyledButto
 import { useDisclosure } from '@mantine/hooks';
 import { formatHumanName, ProfileResource } from '@medplum/core';
 import { HumanName } from '@medplum/fhirtypes';
-import { ResourceAvatar, useMedplumProfile } from '@medplum/react';
+import { ResourceAvatar, useMedplumProfile } from 'marti-react-components';
 import {
   IconChevronDown,
   IconHeart,

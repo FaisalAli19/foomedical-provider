@@ -1,7 +1,7 @@
 import { Button, Group, Table } from '@mantine/core';
 import { formatGivenName } from '@medplum/core';
 import { HumanName, Patient, Practitioner, Reference, Task } from '@medplum/fhirtypes';
-import { Document, ResourceBadge, StatusBadge, useMedplum, useMedplumProfile } from '@medplum/react';
+import { Document, ResourceBadge, StatusBadge, useMedplum, useMedplumProfile } from 'marti-react-components';
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ReassignDialog } from './ReassignDialog';

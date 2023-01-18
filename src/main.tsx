@@ -2,7 +2,7 @@ import { MantineProvider, MantineThemeOverride } from '@mantine/core';
 import { NotificationsProvider } from '@mantine/notifications';
 import { MedplumClient } from '@medplum/core';
 // @ts-ignore  
-import { MedplumProvider } from '@medplum/react';
+import { MedplumProvider } from 'marti-react-components';
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';

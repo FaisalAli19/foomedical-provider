@@ -1,6 +1,6 @@
 import { getDisplayString } from '@medplum/core';
 import { Patient, ResourceType } from '@medplum/fhirtypes';
-import { Document, ResourceTable, useMedplum } from '@medplum/react';
+import { Document, ResourceTable, useMedplum } from 'marti-react-components';
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { PatientHeader } from './PatientHeader';

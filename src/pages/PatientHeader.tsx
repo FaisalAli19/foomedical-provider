@@ -1,7 +1,7 @@
 import { ScrollArea } from '@mantine/core';
 import { calculateAgeString, formatAddress, formatHumanName } from '@medplum/core';
 import { HumanName, Patient, Reference } from '@medplum/fhirtypes';
-import { ResourceAvatar, useResource } from '@medplum/react';
+import { ResourceAvatar, useResource } from 'marti-react-components';
 import React from 'react';
 
 export interface PatientHeaderProps {

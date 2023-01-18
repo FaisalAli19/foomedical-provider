@@ -2,7 +2,7 @@ import { Paper, ScrollArea, Tabs } from '@mantine/core';
 import { showNotification } from '@mantine/notifications';
 import { formatDateTime, normalizeErrorString } from '@medplum/core';
 import { Questionnaire } from '@medplum/fhirtypes';
-import { Document, QuestionnaireBuilder, QuestionnaireForm, useMedplum } from '@medplum/react';
+import { Document, QuestionnaireBuilder, QuestionnaireForm, useMedplum } from 'marti-react-components';
 import React from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 

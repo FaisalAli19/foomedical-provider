@@ -2,7 +2,7 @@ import { ScrollArea, Tabs } from '@mantine/core';
 import { showNotification } from '@mantine/notifications';
 import { normalizeErrorString } from '@medplum/core';
 import { PlanDefinition } from '@medplum/fhirtypes';
-import { Document, PlanDefinitionBuilder, ResourceTable, useMedplum } from '@medplum/react';
+import { Document, PlanDefinitionBuilder, ResourceTable, useMedplum } from 'marti-react-components';
 import React from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { PlanDefinitionApplyForm } from './PlanDefinitionApplyForm';

@@ -1,6 +1,6 @@
 import { Text, Box, Flex, CSSObject, MantineTheme, Image, useMantineTheme } from '@mantine/core';
 // @ts-ignore
-import { ForgotPasswordForm } from '@medplum/react';
+import { ForgotPasswordForm } from 'marti-react-components';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { OperationOutcomeIssue } from '@medplum/fhirtypes';

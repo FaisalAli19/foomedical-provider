@@ -1,4 +1,4 @@
-import { Document } from '@medplum/react';
+import { Document } from 'marti-react-components';
 import React from 'react';
 import { Link } from 'react-router-dom';
 

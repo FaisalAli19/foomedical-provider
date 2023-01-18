@@ -1,6 +1,6 @@
 import { AppShell, MantineTheme } from '@mantine/core';
 // @ts-ignore  
-import { ErrorBoundary, useMedplum } from '@medplum/react';
+import { ErrorBoundary, useMedplum } from 'marti-react-components';
 import React, { Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
