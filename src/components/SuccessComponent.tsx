@@ -12,14 +12,14 @@ export function SuccessComponent({text}: {text: string}) {
   );
 }
 
-const successContainer: CSSObject = (theme: MantineTheme) => ({
+const successContainer = (theme: MantineTheme): CSSObject => ({
   width: '100%',
   height: 197,
   borderRadius: 30,
   backgroundColor: theme.colors.brand[0],
 });
 
-const successText: CSSObject = (theme: MantineTheme) => ({
+const successText = (theme: MantineTheme): CSSObject => ({
   fontWeight: 500,
   fontSize: 33,
   lineHeight: '40px',
