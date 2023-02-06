@@ -485,10 +485,10 @@
   resolved "https://registry.yarnpkg.com/@mantine/utils/-/utils-5.7.1.tgz#d6890be0650cdd499afd2d954713901672d15711"
   integrity sha512-YHn6BDI2kkmLY6Zdv8MnFaolKbD+sJyCBG1GY0yO6aHiz8/vTxiaTJv7mhro7Pc1XzclDzVJvd9kAd6lzumAyg==
 
-"@medplum/core@1.0.5":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@medplum/core/-/core-1.0.5.tgz#41a86a855474faccb467f90227492bd358bdb5af"
-  integrity sha512-XMs2rJgW8LD5snh2SC+U5Ikqd4bBjlEpnzxu9NZGEL/67zCPhU80URYAaT3CdTfVvAOu7BbYESljzjfyrEZ1pA==
+"@medplum/core@2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@medplum/core/-/core-2.0.1.tgz#cd4f4f57d500f18e390fcb65db3205a0a9377f01"
+  integrity sha512-mnQqcs1y6sGPeuDEHhIW8OFIHL5PpqQB7OgM0Nkj2Fd55gfNiZb10txcUgIEuM+cqHwGqIvfrfVLUkLDi1rfSA==
 
 "@medplum/fhirtypes@1.0.5":
   version "1.0.5"
