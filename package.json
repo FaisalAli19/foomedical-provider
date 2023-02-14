@@ -13,7 +13,7 @@
     "@mantine/hooks": "5.7.1",
     "@mantine/notifications": "5.7.1",
     "@medplum/core": "1.0.5",
-    "@medplum/fhirtypes": "1.0.5",
+    "@medplum/fhirtypes": "2.0.2",
     "@medplum/react": "1.0.5",
     "@tabler/icons": "1.110.0",
     "@types/react": "^18.0.26",
