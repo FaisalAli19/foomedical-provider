@@ -495,10 +495,10 @@
   resolved "https://registry.yarnpkg.com/@medplum/fhirtypes/-/fhirtypes-1.0.5.tgz#aa4bac08fc384658ccbf6a1388009b9d181eadd7"
   integrity sha512-slnDz1/U4f+shKhNFO/ZQHoBScGK5dvTLXjyKGxQjG2P7j1seFooXVbGHWKoAqAZGyIcXqnme90z+FN1M9NkAA==
 
-"@medplum/react@1.0.5":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@medplum/react/-/react-1.0.5.tgz#0d514cf3f45086a27b7f30dd9522cbd7879b0590"
-  integrity sha512-P5CjCuZBwa/z/E8wAhenuX3F969TlSrg0JTAH7zcmsQof+r3DKG7p3StU6d6aodUXqtp4R2/CYlWGYLD+0km9Q==
+"@medplum/react@2.0.9":
+  version "2.0.9"
+  resolved "https://registry.yarnpkg.com/@medplum/react/-/react-2.0.9.tgz#51b846d5785f01cc7a75bbe298688fe023d202ec"
+  integrity sha512-VGfwluWVcXyva5MHbIe/2/mNvVSBTTuDWSiEccLC1+dzIxdJsoBL+BqRfG9rbagClriDUlYxZLDGP3v6TU66KQ==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
