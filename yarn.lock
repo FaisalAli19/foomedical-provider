@@ -490,10 +490,10 @@
   resolved "https://registry.yarnpkg.com/@medplum/core/-/core-1.0.5.tgz#41a86a855474faccb467f90227492bd358bdb5af"
   integrity sha512-XMs2rJgW8LD5snh2SC+U5Ikqd4bBjlEpnzxu9NZGEL/67zCPhU80URYAaT3CdTfVvAOu7BbYESljzjfyrEZ1pA==
 
-"@medplum/fhirtypes@1.0.5":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@medplum/fhirtypes/-/fhirtypes-1.0.5.tgz#aa4bac08fc384658ccbf6a1388009b9d181eadd7"
-  integrity sha512-slnDz1/U4f+shKhNFO/ZQHoBScGK5dvTLXjyKGxQjG2P7j1seFooXVbGHWKoAqAZGyIcXqnme90z+FN1M9NkAA==
+"@medplum/fhirtypes@2.0.11":
+  version "2.0.11"
+  resolved "https://registry.yarnpkg.com/@medplum/fhirtypes/-/fhirtypes-2.0.11.tgz#521987a801e1cc16be299f25f9acc7eb3e943755"
+  integrity sha512-3RVrjlrEq9znedCy+MMgXNMqZJqXFpWTTZ4cdUAUS/S+8aNVOvZikg/XgBwgVk9XKt5jtABzzSbDPLGEdt2fjw==
 
 "@medplum/react@1.0.5":
   version "1.0.5"
